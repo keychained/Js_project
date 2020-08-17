@@ -1,3 +1,3 @@
 # Background
 
-[](wireframe.png)
+![](wireframe.png)
