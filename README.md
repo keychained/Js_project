@@ -2,4 +2,4 @@
 
 
 
-[Wireframe](https://wireframe.cc/rV0Skg)
+[](wireframe.png)
