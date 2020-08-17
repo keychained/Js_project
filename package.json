@@ -1,22 +1,9 @@
 {
-  "name": "javascript_project",
+  "name": "js_project",
   "version": "1.0.0",
-  "description": "js_project",
+  "description": "javascript project",
   "main": "index.js",
-  "browserslist": [
-    "last 1 version",
-    "> 1%",
-    "maintained node versions",
-    "not dead"
-],
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "webpack-dev-server --config webpack.dev.js",
-    "webpack:watch": "webpack --watch --config webpack.dev.js",
-    "webpack:build": "webpack --config webpack.prod.js  --optimize-minimize"
-  },
-  "author": "",
-  "license": "ISC",
+  "dependencies": {},
   "devDependencies": {
     "@babel/core": "^7.11.1",
     "@babel/preset-env": "^7.11.0",
@@ -36,5 +23,18 @@
     "webpack-cli": "^3.3.12",
     "webpack-dev-server": "^3.11.0",
     "webpack-merge": "^5.1.1"
-  }
+  },
+  "browserslist": [
+    "last 1 version",
+    "> 1%",
+    "maintained node versions",
+    "not dead"
+  ],
+  "scripts": {
+    "start": "webpack-dev-server --config webpack.dev.js",
+    "webpack:watch": "webpack --watch --config webpack.dev.js",
+    "webpack:build": "webpack --config webpack.prod.js  --optimize-minimize"
+  },
+  "author": "",
+  "license": "ISC"
 }
