@@ -3,4 +3,4 @@
 In Browser Destoyer, users will be able to:
 * Pick and choose a background which will serve as the ground where the user can "destroy" the chosen background
 
-![image](https://wireframe.cc/rV0Skg)
+[Wireframe](https://wireframe.cc/rV0Skg)
