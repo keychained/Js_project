@@ -1,5 +1,1 @@
 # Background
-
-
-
-![image](wireframe.png)
