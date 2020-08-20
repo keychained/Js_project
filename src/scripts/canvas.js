@@ -1,11 +1,14 @@
 var x = 50
 
+function preload() {
+    bg = loadImage('images/windows-background.jpeg');
+    flame = createImg('images/fire.gif')
+}
+
 function setup() {
     var canvas = createCanvas(800, 800);
     canvas.parent("canvas-container");
-    loadImage('windows-background.jpeg', img => {
-        image(img, 0, 0);
-    });
+    image(bg, 0, 0);
 }
 
 function draw() {
@@ -13,6 +16,7 @@ function draw() {
     rect(0, 0, width, 50);
     fill(0);
     text("Play Again", 350, 20, width / 2);
+    cursor('images/flamethrower.cur');
 }
 
 function mousePressed() {
@@ -22,9 +26,12 @@ function mousePressed() {
 }
 
 function mouseDragged() {
+    var flames = flame.position(mouseX + 500, mouseY + 80)
     if (mouseY > 70) {
     fill(255);
     noStroke();
-    ellipse(mouseX, mouseY, x, x);
+    image(flames, mouseX - 60, mouseY - 30, x, x);
+    // flame.position(mouseX + 500, mouseY + 80)
     }
+    
 }
