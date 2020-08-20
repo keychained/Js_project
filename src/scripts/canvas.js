@@ -26,11 +26,10 @@ function mousePressed() {
 }
 
 function mouseDragged() {
-    var flames = flame.position(mouseX + 500, mouseY + 80)
-    if (mouseY > 70) {
+    if (mouseY > 70 && mouseY < 630) {
     fill(255);
     noStroke();
-    image(flames, mouseX - 60, mouseY - 30, x, x);
+    image(flame, mouseX - 60, mouseY - 30, x, x);
     // flame.position(mouseX + 500, mouseY + 80)
     }
     
