@@ -4,7 +4,7 @@ let animation = [];
 
 function preload() {
     bg = loadImage('images/windows-background.jpeg');
-    flames = createImg('images/fire_circles.gif');
+    flames = createImg('images/fire.gif');
     spritesheet = loadImage('images/fire_circles_sprite.png');
     spritedata = loadJSON('images/fire_circles.json');
 }
@@ -69,9 +69,9 @@ function mousePressed() {
 //     }
 // }
 
-// function mouseReleased() {
-//     if (mouseY > 40 && mouseY < 640 && mouseX > 30 && mouseX < 850) {
-//         // image(animation[frameCount % animation.length], mouseX, mouseY);
-//        flames.position(mouseX + 520, mouseY, 1, 1);
-//     }
-// }
+function mouseReleased() {
+    if (mouseY > 40 && mouseY < 640 && mouseX > 30 && mouseX < 850) {
+        // image(animation[frameCount % animation.length], mouseX, mouseY);
+       flames.position(mouseX + 520, mouseY + 50);
+    }
+}
