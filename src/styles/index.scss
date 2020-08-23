@@ -22,6 +22,7 @@ time, mark, audio, video {
 html, body {
     width: 100vw;
     height: 100vh;
+    background-color: black;
 }
 
 #canvas-container {
@@ -37,6 +38,17 @@ html, body {
     text-align: center;
     margin: auto;
     font-size: 40px;
+    color: white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+#game-description {
+    width: 100%;
+    text-align: center;
+    margin: auto;
+    font-size: 20px;
+    color: white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 canvas {
