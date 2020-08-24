@@ -24,13 +24,13 @@ function setup() {
         let img = spritesheet.get(pos.x, pos.y, pos.w, pos.h);
         animation.push(img);
     }
-    console.log(animation);
 }
 
 function draw() {
     if (mouseIsPressed && mouseY > 30 && mouseY < 610) {
-    image(animation[frameCount % animation.length], mouseX - 30, mouseY - 10);
+       image(animation[frameCount % animation.length], mouseX - 30, mouseY - 10);
     }
+
     // fill(220, 12);
     // image(bg, 0, 0);
     // bg(0, 0, 800, 800);
@@ -72,6 +72,6 @@ function mousePressed() {
 function mouseReleased() {
     if (mouseY > 40 && mouseY < 640 && mouseX > 30 && mouseX < 850) {
         // image(animation[frameCount % animation.length], mouseX, mouseY);
-       flames.position(mouseX + 520, mouseY + 50);
+       flames.position(mouseX + 520, mouseY + 90);
     }
 }
