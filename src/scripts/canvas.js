@@ -69,9 +69,9 @@ function mousePressed() {
 //     }
 // }
 
-function mouseReleased() {
-    if (mouseY > 40 && mouseY < 640 && mouseX > 30 && mouseX < 850) {
-        // image(animation[frameCount % animation.length], mouseX, mouseY);
-       flames.position(mouseX + 520, mouseY + 90);
-    }
-}
+// function mouseReleased() {
+//     if (mouseY > 40 && mouseY < 640 && mouseX > 30 && mouseX < 850) {
+//         // image(animation[frameCount % animation.length], mouseX, mouseY);
+//        flames.position(mouseX + 520, mouseY + 90);
+//     }
+// }
