@@ -12,8 +12,6 @@ In Browser Destroyer, users will be able to:
 
 * Choose a weapon that you wish to use to "destroy" the said background("browser").
 
-* Find hidden element within the background("browser") which will initiate a fancy explosion animation users can enjoy.
-
 In addition, this project will also include:
 
 * A modal with a gif showcasing the game in action, with a brieft how to play.
