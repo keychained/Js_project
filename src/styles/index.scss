@@ -55,3 +55,21 @@ canvas {
     display: block;
     margin: auto;
 }
+
+#canvas-1 {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    background-image: url("../../images/windows-background.jpeg");
+    background-size: cover;
+    width: 25%;
+    height: 50%;
+}
+
+#buttons {
+    position: relative;
+    width: 100%;
+    text-align: center;
+    margin-top: 0.2%;
+    margin-bottom: 0.2%;
+}
