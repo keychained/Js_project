@@ -40,7 +40,6 @@ function setup() {
 }
 
 function draw() {
-  fires();
   // if (mouseIsPressed) {
     // image(
     //   animation[frameCount % animation.length],
@@ -51,9 +50,9 @@ function draw() {
 }
 
 function fires() {
-  for (let i = 0; i < width; i+=20) {
+  for (let i = 0; i < width; i+=25) {
     for (let j = 0; j < height; j+=30)
-   image(animation[frameCount % animation.length], i, j);
+    image(animation[frameCount % animation.length], i, j);
   }
 }
 
