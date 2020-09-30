@@ -18,7 +18,7 @@ function setup() {
   var canvas = createCanvas(800, 550);
   canvas.parent("canvas-container");
   image(bg1, 0, 0);
-  b1Button = createButton("Play Again!");
+  b1Button = createButton("Background 1");
   b2Button = createButton("Background 2")
   b3Button = createButton("Background 3");
   b4Button = createButton("Background 4");
@@ -26,7 +26,7 @@ function setup() {
   b2Button.parent("buttons");
   b3Button.parent("buttons");
   b4Button.parent("buttons");
-  b1Button.mousePressed(resetGame);
+  b1Button.mousePressed(background1);
   b2Button.mousePressed(background2);
   b3Button.mousePressed(background3);
   b4Button.mousePressed(background4);
@@ -40,16 +40,24 @@ function setup() {
 }
 
 function draw() {
-  if (mouseIsPressed) {
-    image(
-      animation[frameCount % animation.length],
-      mouseX - 30,
-      mouseY - 10
-    );
+  fires();
+  // if (mouseIsPressed) {
+    // image(
+    //   animation[frameCount % animation.length],
+    //   mouseX - 30,
+    //   mouseY - 10
+    // );
+  // }
+}
+
+function fires() {
+  for (let i = 0; i < width; i+=20) {
+    for (let j = 0; j < height; j+=30)
+   image(animation[frameCount % animation.length], i, j);
   }
 }
 
-function resetGame() {
+function background1() {
   image(bg1, 0, 0);
 }
 
