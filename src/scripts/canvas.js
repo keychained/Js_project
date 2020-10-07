@@ -1,6 +1,7 @@
 let spritesheet;
 let spritedata;
-let animation = [];
+let fire_animation;
+let animations = [];
 let backgrounds = [];
 let bButton;
 let gButton;
@@ -10,14 +11,17 @@ function preload() {
   bg2 = loadImage("images/windows-8-background.jpg")
   bg3 = loadImage("images/windows-vista-background.jpg")
   bg4 = loadImage("images/windows-10-background.jpg")
-  spritesheet = loadImage("images/fire_circles_sprite.png");
-  spritedata = loadJSON("images/fire_circles.json");
+  spritesheet = loadSpriteSheet("images/fire_circles_sprite.png", 50, 50, 61);
+  fire_animation = loadAnimation(spritesheet);
+  fire_animation.frameDelay = 1;
+  // spritesheet1 = loadImage("images/fire_circles_sprite.png");
+  // spritedata = loadJSON("images/fire_circles.json");
 }
 
 function setup() {
   var canvas = createCanvas(800, 550);
   canvas.parent("canvas-container");
-  image(bg1, 0, 0);
+  // image(bg1, 0, 0);
   b1Button = createButton("Background 1");
   b2Button = createButton("Background 2")
   b3Button = createButton("Background 3");
@@ -31,29 +35,27 @@ function setup() {
   b3Button.mousePressed(background3);
   b4Button.mousePressed(background4);
   cursor("images/flamethrower.cur");
-  let frames = spritedata.frames;
-  for (let i = 0; i < frames.length; i++) {
-    let pos = frames[i].position;
-    let img = spritesheet.get(pos.x, pos.y, pos.w, pos.h);
-    animation.push(img);
-  }
-}
-
-function draw() {
-  // if (mouseIsPressed) {
-    // image(
-    //   animation[frameCount % animation.length],
-    //   mouseX - 30,
-    //   mouseY - 10
-    // );
+  // let frames = spritedata.frames;
+  // for (let i = 0; i < frames.length; i++) {
+  //   let pos = frames[i].position;
+  //   let img = spritesheet1.get(pos.x, pos.y, pos.w, pos.h);
+  //   animations.push(img);
   // }
 }
 
-function fires() {
-  for (let i = 0; i < width; i+=25) {
-    for (let j = 0; j < height; j+=30)
-    image(animation[frameCount % animation.length], i, j);
+function draw() {
+  clear();
+  image(bg1, 0, 0);
+  if (mouseIsPressed) {
+    animation(fire_animation, mouseX, mouseY);
   }
+}
+
+function fires() {
+  // for (let i = 0; i < width; i+=35) {
+  //   for (let j = 0; j < height; j+=30)
+    // image(animation[frameCount % animation.length], 0, 0);
+  // }
 }
 
 function background1() {
