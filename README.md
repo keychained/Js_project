@@ -1,6 +1,6 @@
 # Background
 
-Browser Destroyer is a twist to your favorite classic game Desktop Destroyer. The user will be able to pick a background of their choosing, weapon of their choice, and start "destroying" the said background. Users can also find hidden elements that will completely destroy the background within seconds. There are no high scores/points so the game can be played for hours on end.
+Browser Destroyer is a twist to your favorite classic game Desktop Destroyer. The user will be able to pick a background from the given choices, and start "destroying" the said background. There are no high scores/points so the game can be played for hours on end.
 
 # Functionality & MVP
 
